@@ -1,0 +1,12 @@
+
+GET http://localhost:3000/api/organization/005/total-price?zone=central&total_distance=12&item_type=perishable
+
+POST http://localhost:3000/calculate-price
+Content-Type: application/json
+
+{
+    "organizationId": "005",
+    "zone": "central",
+    "itemType": "perishable",
+    "totalDistance": 12
+}
